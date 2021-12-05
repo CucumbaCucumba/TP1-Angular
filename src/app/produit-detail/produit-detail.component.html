@@ -1,0 +1,25 @@
+<table border="4">
+    <tr>
+        <th>
+            nom
+        </th>
+        <th>
+            price
+        </th>
+        <th>
+            quanity
+        </th>
+    </tr>
+    <tr>
+    <td><p>{{ products[id].nom}}</p></td> 
+    <td><p>{{ products[id].prix}}</p></td>
+     <td><p>{{ products[id].quantite}}</p></td>
+     </tr>
+
+    </table>
+    
+<p *ngIf="products[id].quantite; else pis ">en Stock </p>
+<ng-template #pis>
+    <p>pas en Stock</p>
+</ng-template>
+<button class="btn btn-primary" (click)=retour()>back</button>

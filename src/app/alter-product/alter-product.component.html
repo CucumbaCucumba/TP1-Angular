@@ -1,0 +1,18 @@
+
+<form [formGroup]="Prod">
+    <div class="form-group">
+<label for="name" style="color: white;">Name:</label>
+<input type="text" id="name" class="form-control" formControlName="name"><br>
+    </div>
+    <div class="form-group">
+<label for="price" style="color: white;">Price:</label>
+<input type="text" id="price" class="form-control" formControlName="price"><br>
+</div>
+<div class="form-group">
+<label for="quantity" style="color: white;">Quantity:</label>
+<input type="text" id="quanity" class="form-control" formControlName="quantity"><br>
+<button class="btn btn-primary active" style="border-radius: 25px;" type="submit" (click)=onSubmit()>Submit</button>
+</div>
+</form>
+
+
