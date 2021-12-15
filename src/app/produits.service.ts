@@ -8,7 +8,7 @@ import { Produit } from './model/produit';
 })
 export class ProduitsService {
 
-host="http://localhost:3000/produits/"  
+host="http://localhost:8282/produits/"  
   constructor(private http:HttpClient) { }
 
   public getProducts():Observable<Produit[]>{
